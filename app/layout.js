@@ -1,8 +1,9 @@
-import { Geist_Mono } from 'next/font/google';
+import { Courier_Prime } from 'next/font/google';
 import './globals.css';
 
-const geistMono = Geist_Mono({
+const courierPrime = Courier_Prime({
   subsets: ['latin'],
+  weight: ['400', '700'],
   variable: '--font-geist-mono',
   display: 'swap',
 });
@@ -14,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={geistMono.variable}>
+    <html lang="en" className={courierPrime.variable}>
       <body>{children}</body>
     </html>
   );

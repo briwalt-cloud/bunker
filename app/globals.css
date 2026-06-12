@@ -1,0 +1,84 @@
+:root {
+  --bg: #FFFFFF;
+  --ink: #231F20;
+  --mono: var(--font-geist-mono), ui-monospace, monospace;
+  --col: 760px;
+  --gutter: 56px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--mono);
+}
+
+a { color: inherit; }
+
+.frame {
+  max-width: calc(var(--col) + var(--gutter) * 2);
+  margin: 0 auto;
+  padding: 48px var(--gutter) 96px;
+}
+
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.wordmark {
+  display: block;
+  width: 220px;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+
+.wordmark svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.nav {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  padding-top: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 1px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 700px) {
+  :root {
+    --gutter: 20px;
+  }
+  .frame { padding: 32px var(--gutter) 64px; }
+  .masthead { margin-bottom: 48px; }
+  .wordmark { width: 150px; }
+  .gallery { gap: 48px; }
+}

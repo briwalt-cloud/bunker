@@ -4,7 +4,7 @@ import { execSync } from 'child_process';
 import Wordmark from '../components/Wordmark';
 
 // === EDIT THESE ===
-const INSTAGRAM_URL = 'https://instagram.com/YOUR_HANDLE';
+const INSTAGRAM_URL = 'https://www.instagram.com/bunker__editions';
 const CONTACT_EMAIL = 'briwalt@gmail.com';
 // ==================
 

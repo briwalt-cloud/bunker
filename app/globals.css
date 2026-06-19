@@ -2,7 +2,7 @@
   --bg: #FFFFFF;
   --ink: #231F20;
   --mono: var(--font-geist-mono), ui-monospace, monospace;
-  --col: 760px;
+  --col: 836px;
   --gutter: 56px;
 }
 
@@ -57,14 +57,12 @@ a { color: inherit; }
 
 .nav a {
   text-decoration: none;
-  border-bottom: 1px solid var(--ink);
-  padding-bottom: 1px;
 }
 
 .gallery {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 40px;
 }
 
 .gallery img {
